@@ -1,2 +1,2 @@
-# fazerhoje
-# planeje suas tarefas rapidamente
+# Fazer Hoje
+Planeje suas tarefas rapidamente
