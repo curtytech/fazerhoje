@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "fazerhoje",
+    "slug": "fazerhoje",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
