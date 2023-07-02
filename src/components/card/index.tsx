@@ -2,6 +2,7 @@ import { Text, View, TouchableOpacity } from 'react-native';
 
 import { styles } from "./style";
 
+
 // import { useState } from "react";
 import theme from '../../theme';
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -18,28 +19,28 @@ type typeCard = {
 }
 
 export function Card({ isChecked, taskName, onRemove, onCheck }: typeCard) {
-    // const [text, setText] = useState('Useless Text');
-    // console.log(isChecked);
+  
     return (
-        <View style={{ alignItems: 'center' }}>
+        
+        <View style={{ alignItems: 'center'}}>
             <View style={styles.container}>
                 <View>
                     {isChecked ?
                         <TouchableOpacity
                             onPress={onCheck}>
-                            <AntDesign name="checkcircle" size={21} color={theme.COLORS.PURPLE_DARK} />
+                            <AntDesign name="checkcircle" size={25} color={theme.COLORS.primary} />
                         </TouchableOpacity>
                         :
                         <TouchableOpacity
                             onPress={onCheck}>
-                            <Entypo name="circle" size={21} color={theme.COLORS.BLUE} />
+                            <Entypo name="circle" size={25} color={theme.COLORS.primary} />
                         </TouchableOpacity>
                     }
                 </View>
                 <Text style={styles.text}> {taskName} </Text>
                 <TouchableOpacity
                     onPress={onRemove}>
-                    <Ionicons name="trash" size={21} color="white" />
+                    <Ionicons name="trash" size={25} color="white" />
                 </TouchableOpacity>
             </View>
 

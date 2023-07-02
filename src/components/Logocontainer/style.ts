@@ -10,9 +10,10 @@ export const styles = StyleSheet.create({
     },
 
     logo: {
-        resizeMode: 'contain',
-        width: 300,
-        backgroundColor: theme.COLORS.GRAY_700,
+        // resizeMode: 'contain',
+        // width: 300,
+        // backgroundColor: theme.COLORS.GRAY_700,
+        marginVertical: 50
     }
 
     

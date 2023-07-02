@@ -1,4 +1,4 @@
-package com.fazerhoje;
+package com.phelipecurty.fazerhoje;
 
 import android.os.Build;
 import android.os.Bundle;

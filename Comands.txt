@@ -3,12 +3,6 @@ yarn cache clean
 
 // Abrir com Metro
 npx react-native start
-
-// Buildar android virtual
-Em outra aba 
-
-
-npx react-native start
 npx react-native run-android
 
 // Formatar datas
@@ -19,8 +13,40 @@ na pasta android
 gradlew assembleRelease
 
 
-
+// install watermelon db
 yarn add @nozbe/watermelondb
+yarn add --dev @babel/plugin-proposal-decorators
 
-# (or with npm:)
-npm install @nozbe/watermelondb
+// babel.config.js deve ficar assim
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ['babel-preset-expo', 'module:metro-react-native-babel-preset'],
+    plugins: [
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      [
+        'module-resolver',
+        {
+          root: ['./src'],
+          alias: {
+            '@dtos': './src/dtos',
+            '@assets': './src/assets',
+            '@components': './src/components',
+            '@screens': './src/screens',
+            '@storage': './src/storage',
+            '@utils': './src/utils',
+            '@services': './src/services',
+            '@hooks': './src/hooks',
+            '@contexts': './src/contexts',
+            '@routes': './src/routes',
+            '@databases': './src/databases'
+          }
+        },
+      ],
+    ],
+  };
+};
+
+// tem que trocar a versao do kotlin no android/build.gradle
+kotlinVersion = "1.5.20"
+

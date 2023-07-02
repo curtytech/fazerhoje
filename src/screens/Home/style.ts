@@ -4,22 +4,23 @@ import theme from '../../theme/index';
 export const styles = StyleSheet.create({
 
     containertexts: {
+        // top: -25,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 5
+        marginBottom: 10
     },
 
     titlecriadas: {
         color: theme.COLORS.primary,
         fontWeight: 'bold',
         marginLeft: 20,
-        fontSize: theme.FONT_SIZE.LG,
+        fontSize: theme.FONT_SIZE.MD,
     },
     titleconcluidas: {
         color: theme.COLORS.primary,
         fontWeight: 'bold',
         marginLeft: 20,
-        fontSize: theme.FONT_SIZE.LG,
+        fontSize: theme.FONT_SIZE.MD,
     },
 
     numbers: {
@@ -61,23 +62,22 @@ export const styles = StyleSheet.create({
         color: theme.COLORS.GRAY_200,
         padding: 16,
         fontSize: 16,
-        marginTop: 10,
+        // marginTop: 10,
         marginRight: 10,
-        borderWidth: 1,
-        borderColor: theme.COLORS.GRAY_200,
+        borderWidth: 0.5,
+        borderColor: theme.COLORS.GRAY_300,
     },
     button: {
-        width: 35,
-        height: 35,
+        width: 60,
+        height: 60,
         borderRadius: 7,
         backgroundColor: theme.COLORS.primary,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 10,
-
+        // marginTop: 10,
     },
     form: {
-        top: -50,
+        // top: -50,
         width: '100%',
         flexDirection: 'row',
         padding: '5%',

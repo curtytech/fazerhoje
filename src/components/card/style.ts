@@ -7,16 +7,18 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    width: '80%',
-    backgroundColor: theme.COLORS.GRAY_500,
+    width: '85%',
+    backgroundColor: theme.COLORS.GRAY_600,
     padding: 12,
     borderRadius: 7,
+    borderWidth: 0.5,
+    borderColor: theme.COLORS.GRAY_300,
     marginVertical: 5,
   },
 
   text: {
     color: theme.COLORS.GRAY_200,
-    marginLeft: 5,
+    marginLeft: 7,
     flex:1
   },
 
