@@ -128,7 +128,7 @@ export function Home() {
                 <FlatList
                     style={{
                         minHeight: 200,
-                        maxHeight: 400,
+                        maxHeight: 500,
                         marginBottom: 25
                     }}
                     data={tasks}
@@ -137,7 +137,6 @@ export function Home() {
                     showsVerticalScrollIndicator={false}
                     ListEmptyComponent={() => (
                         <View style={styles.listEmpty}>
-                            {/* <Divider /> */}
 
                             <FontAwesome5 style={{ marginBottom: 5 }} name="clipboard-list" size={35} color="white" />
 

@@ -40,7 +40,7 @@ export function Card({ isChecked, taskName, onRemove, onCheck }: typeCard) {
                 <Text style={styles.text}> {taskName} </Text>
                 <TouchableOpacity
                     onPress={onRemove}>
-                    <Ionicons name="trash" size={25} color="white" />
+                    <Ionicons name="trash" size={25} color={theme.COLORS.GRAY_200} />
                 </TouchableOpacity>
             </View>
 
